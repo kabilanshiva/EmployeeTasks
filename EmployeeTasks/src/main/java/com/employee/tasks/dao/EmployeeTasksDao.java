@@ -12,4 +12,8 @@ public interface EmployeeTasksDao {
 
 	public void deleteTask(Task task);
 
+	public void updateTask(Task task);
+
+	public List<Task> getFilteredTasks(Task task);
+
 }

@@ -11,13 +11,12 @@ import com.employee.tasks.dao.EmployeeTasksDao;
 import com.employee.tasks.model.Task;
 import com.employee.tasks.service.EmployeeTaskService;
 
-
 @RestController
 public class EmployeeTaskServiceImpl implements EmployeeTaskService {
 
 	@Autowired
 	private EmployeeTasksDao employeeTasksDao;
-	
+
 	@Override
 	public void insertTask(Task task) {
 		employeeTasksDao.insertTask(task);
@@ -25,12 +24,22 @@ public class EmployeeTaskServiceImpl implements EmployeeTaskService {
 
 	@Override
 	public ResponseEntity<List<Task>> getAllTasks() {
-		return new ResponseEntity<List<Task>>(employeeTasksDao.getAllTasks(),HttpStatus.OK);
+		return new ResponseEntity<List<Task>>(employeeTasksDao.getAllTasks(), HttpStatus.OK);
 	}
 
 	@Override
 	public void deleteTask(Task task) {
-		employeeTasksDao.deleteTask(task);		
+		employeeTasksDao.deleteTask(task);
+	}
+
+	@Override
+	public void updateTask(Task task) {
+		employeeTasksDao.updateTask(task);
+	}
+
+	@Override
+	public ResponseEntity<List<Task>> getFilteredTasks(Task task) {
+		return new ResponseEntity<List<Task>>(employeeTasksDao.getFilteredTasks(task), HttpStatus.OK);
 	}
 
 }
