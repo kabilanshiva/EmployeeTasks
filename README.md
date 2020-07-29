@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EmployeeTasks
 Microservice for creating, updating and deleting tasks for employees in an organization
 
@@ -11,3 +12,6 @@ service with a Json input as Task Id deletes the coresponding task in the db
 service with a Json Input to update task status with task id and status as input
 #Post /employee/tasks/filter
 Service with a Json Input with any existing fields to filter out the tasks
+=======
+# QuotesApp
+>>>>>>> branch 'master' of https://github.com/kabilanshiva/QuotesApp.git
