@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+
+#Spring security 
+#Spring boot
+#Spring JDBC 
+#PostgreSQL
+
 # EmployeeTasks
 Microservice for creating, updating and deleting tasks for employees in an organization
 
