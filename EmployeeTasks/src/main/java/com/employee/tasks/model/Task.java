@@ -2,7 +2,6 @@ package com.employee.tasks.model;
 
 import org.springframework.stereotype.Component;
 
-@Component("task")
 public class Task{
 	
 	private String taskId;
